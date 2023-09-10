@@ -1,0 +1,65 @@
+body{
+    font-family: 'Stylish', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #EFB495;
+}
+div h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+.loading-dots {
+    text-align: center;
+    z-index: 5;
+  
+    .dot {
+      display: inline;
+      margin-left: 0.2em;
+      margin-right: 0.2em;
+      position: relative;
+      top: -1em;
+      font-size: 3.5em;
+      opacity: 0;
+      animation: showHideDot 1.8s ease-in-out infinite;
+  
+      &.one { animation-delay: 0.2s; }
+      &.two { animation-delay: 0.4s; }
+      &.three { animation-delay: 0.6s; }
+    }
+ }
+  
+@keyframes showHideDot {
+0% { opacity: 0; }
+50% { opacity: 1; }
+60% { opacity: 1; }
+100% { opacity: 0; }
+}
+  
+
+.typewriter h1 {
+overflow: hidden;
+border-right: .15em solid black;
+white-space: nowrap;
+margin: 0 auto;
+letter-spacing: .1em;
+animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+from { width: 0 }
+to { width: 100% }
+}
+
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: black; }
+}
+
+@media (max-width:450px) {
+    .typewriter h1{
+        font-size: 2em;
+    }
+}
