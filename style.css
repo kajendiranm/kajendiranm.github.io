@@ -65,3 +65,9 @@ from, to { border-color: transparent }
         font-size: 2em;
     }
 }
+
+.countdown{
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 80px;
+}
