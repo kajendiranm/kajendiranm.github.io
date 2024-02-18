@@ -6,6 +6,9 @@ const responseEl = document.querySelector('.form-response ')
 const btnText = form.querySelector('.button-text')
 const spinner = form.querySelector('.spinner')
 
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+
+
 submitBtn.addEventListener('click', event => {
     event.preventDefault()
 
@@ -27,18 +30,24 @@ submitBtn.addEventListener('click', event => {
     if(name.value == '') {
         shakeTheElement(name)
         name.focus()
+        return
     }
     else if(email.value === ''){
         shakeTheElement(email)
         email.focus()
+        return
     }
     else if(message.value === '') {
         shakeTheElement(message)
         message.focus()
-    }
-    
-    if(name.value == '' || email.value == '' || message.value == '')
         return
+    }
+    if(!(emailRegex.test(email.value))){
+        shakeTheElement(email)
+        email.focus()
+        return
+    }
+
 
     btnText.classList.add('hide')
     spinner.classList.remove('hide')
