@@ -46,7 +46,7 @@ submitBtn.addEventListener('click', event => {
     
     $.ajax({
         type: "POST",
-        url: 'http://127.0.0.1:8000/portfolio/post_feedback',
+        url: 'https://kajendiran.pythonanywhere.com/portfolio/post_feedback',
         data: {
             'name': name.value,
             'email': email.value,
