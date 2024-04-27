@@ -11,8 +11,8 @@
     box-sizing: border-box;
 }
 .uparrow{
-    font-size: 45px;
     color: #00ADB5;
+    font-size: 45px;
     filter: brightness(150%);
     position: fixed;
     right: 50px;
@@ -37,6 +37,7 @@ header{
 }
 .container{
     padding: 0 200px;
+    /* position: relative; */
 }
 .navbar ul{
     list-style: none;
@@ -181,7 +182,7 @@ h2 .hi{
     padding: 10px;
 }
 .about-me-main img{
-    max-width: 180px;
+    max-width: 200px;
     border-radius: 30px;
     flex: 1;
 }
@@ -189,14 +190,10 @@ h2 .hi{
     color: white;
     flex: 1;
     padding: 20px;
-    line-height: 30px;
+    line-height: 28px;
     font-size: 1.2rem;
     background-color: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
-}
-.my-name{
-    color: #00ADB5;
-    filter: brightness(150%);
 }
 
 /* Horozontal Scrolling */
@@ -345,7 +342,10 @@ h2 .hi{
     background-color: rgba(0, 0, 0, .5);
     user-select: none;
 }
-.caption a{
+.caption-a{
+    text-decoration: none;
+}
+.caption .visit-btn{
     text-decoration: none;
     color: white;
     background-color: #00ADB5;
@@ -361,6 +361,7 @@ h2 .hi{
     background-color: #b7b8b9;
 }
 .caption .description{
+    color: white;
     padding: 7px;
     font-size: 16px;
 }
@@ -591,7 +592,7 @@ textarea{
         font-size: 2.5em;
     }
     .dynamicText{
-        font-size: 3.3rem;
+        font-size: 3.5rem;
     }
     .races h2, .races h2 span{
         font-size: 8rem;
@@ -627,7 +628,7 @@ textarea{
         font-size: 2em;
     }
     .dynamicText{
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
     .races h2, .races h2 span{
         font-size: 6rem;
