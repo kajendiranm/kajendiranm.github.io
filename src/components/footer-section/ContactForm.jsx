@@ -94,6 +94,11 @@ export default function ContactForm() {
                 status: 'success',
                 message: `Hey ${data.name}, I got your message!`
             })
+
+            name.current.value = '';
+            email.current.value = '';
+            message.current.value = '';
+
             setTimeout(() => {
                 setResult({
                     status: '',
